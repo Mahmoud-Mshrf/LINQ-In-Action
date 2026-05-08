@@ -1,1 +1,8 @@
-<Solution />
+<Solution>
+  <Folder Name="/01_Pure_vs_Impure_functions/">
+    <File Path="StatementVsExpression/Programming Paradigms.png" />
+    <File Path="StatementVsExpression/Why C Sharp is a multi-paradigm programming language .png" />
+    <Project Path="PureVsImpureFunctions/PureVsImpureFunctions.csproj" />
+    <Project Path="StatementVsExpression/StatementVsExpression.csproj" />
+  </Folder>
+</Solution>
