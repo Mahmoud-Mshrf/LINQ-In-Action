@@ -5,4 +5,9 @@
     <Project Path="PureVsImpureFunctions/PureVsImpureFunctions.csproj" />
     <Project Path="StatementVsExpression/StatementVsExpression.csproj" />
   </Folder>
+  <Folder Name="/02_FunctionalProgramming/">
+    <File Path="Declarative_Vs_Imperative.txt" />
+    <File Path="HigherOrderFunctions.txt" />
+    <Project Path="FunctionalProgramming/FunctionalProgramming.csproj" />
+  </Folder>
 </Solution>
