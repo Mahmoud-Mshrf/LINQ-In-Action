@@ -10,4 +10,11 @@
     <File Path="HigherOrderFunctions.txt" />
     <Project Path="FunctionalProgramming/FunctionalProgramming.csproj" />
   </Folder>
+  <Folder Name="/03_What_Is_LINQ/">
+    <File Path="LINQ.txt" />
+    <Project Path="03_Shared/03_Shared.csproj" />
+    <Project Path="Example01/Example01.csproj" />
+    <Project Path="Example02/Example02.csproj" />
+    <Project Path="Example03/Example03.csproj" />
+  </Folder>
 </Solution>

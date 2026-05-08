@@ -1,0 +1,46 @@
+LINQ (Language Integrated Query) is a feature in C# that allows you to query and transform data using a declarative syntax directly inside the language.
+
+It works with:
+
+collections (List, arrays, dictionaries)
+databases
+XML
+files
+any enumerable data source
+
+Example:
+
+var numbers = new List<int> { 1,2,3,4,5 };
+
+var evens = numbers.Where(x => x % 2 == 0);
+
+Here:
+
+Where filters data
+x => x % 2 == 0 is the condition
+LINQ returns only even numbers
+
+Result:
+
+2, 4
+
+LINQ is built mainly on:
+
+extension methods
+delegates
+lambda expressions
+IEnumerable<T>
+
+Common LINQ methods:
+
+Where → filtering
+Select → transformation
+OrderBy → sorting
+GroupBy → grouping
+Any / All → condition checking
+First / Single → getting elements
+
+Core idea:
+
+LINQ lets you work with data in a declarative way:
+describe WHAT you want instead of HOW to iterate manually.
