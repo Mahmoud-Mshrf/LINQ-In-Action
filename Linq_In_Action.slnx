@@ -17,4 +17,10 @@
     <Project Path="Example02/Example02.csproj" />
     <Project Path="Example03/Example03.csproj" />
   </Folder>
+  <Folder Name="/04_Projection_Operation/">
+    <Project Path="ProjectUsingSelect/ProjectUsingSelect.csproj" />
+    <Project Path="ProjectUsingSelectMany/ProjectUsingSelectMany.csproj" />
+    <Project Path="ProjectUsingZip/ProjectUsingZip.csproj" />
+    <Project Path="_04_Shared/_04_Shared.csproj" />
+  </Folder>
 </Solution>
