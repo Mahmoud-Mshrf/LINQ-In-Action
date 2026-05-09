@@ -23,4 +23,11 @@
     <Project Path="ProjectUsingZip/ProjectUsingZip.csproj" />
     <Project Path="_04_Shared/_04_Shared.csproj" />
   </Folder>
+  <Folder Name="/05_Sorting_Data/">
+    <Project Path="ClassLibrary1/_05_Shared.csproj" Id="b289effd-9564-4974-8197-5caad0b78023" />
+    <Project Path="OrderBy/OrderBy.csproj" Id="d473071e-7a96-4af1-a6fe-cec2f54cdafa" />
+    <Project Path="OrderByWithComparer/OrderByWithComparer.csproj" Id="13b72280-c031-42bb-b9f0-ceed2eda90fb" />
+    <Project Path="Reverse/Reverse.csproj" Id="b23ad8a3-2f38-4a04-a48c-122280e4fff8" />
+    <Project Path="Then-By/Then-By.csproj" Id="ebdadb75-aea7-4638-ad3e-6483a3bab16b" />
+  </Folder>
 </Solution>
