@@ -13,8 +13,15 @@ namespace ProjectUsingSelectMany
     {
         static void Main(string[] args)
         {
-            RunExample01();
-            RunExample02();
+            //RunExample01();
+            //RunExample02();
+            var employees = Repository.LoadEmployees();
+            var skills = SelectManyInternally(employees);
+            Console.WriteLine("Using SelectMany under the hood");
+            foreach (var item in skills)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         private static void RunExample01()
@@ -41,6 +48,32 @@ namespace ProjectUsingSelectMany
             foreach (var item in result01)
             {
                 Console.WriteLine(item);
+            }
+        }
+        private static void RunExample03()
+        {
+            var employees = Repository.LoadEmployees();
+            var result02 = employees.SelectMany(x => x.Skills);
+
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Using SelectMany");
+            foreach (var item in result02)
+            {
+                Console.WriteLine(item);
+            }
+
+
+        }
+        private static IEnumerable<string> SelectManyInternally(IEnumerable<Employee> employees)
+        {
+            // what is selectMany actually do :
+
+            foreach (var employee in employees)
+            {
+                foreach (var skill in employee.Skills)
+                {
+                    yield return skill;
+                }
             }
         }
     }
