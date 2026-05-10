@@ -49,6 +49,12 @@
     <Project Path="Join_Operators/Join_Operators.csproj" Id="a98a048f-284e-4c41-b448-d95d9de47835" />
     <Project Path="_09_Shared/_09_Shared.csproj" Id="e81b1ed7-d866-40b3-ad2a-e544b8c7bb76" />
   </Folder>
+  <Folder Name="/10_Generation_Operations/">
+    <Project Path="DefaultIIfEmpty/DefaultIIfEmpty.csproj" Id="c9de9970-5676-4c88-9dd5-681279c37a09" />
+    <Project Path="Empty/Range.csproj" Id="90fdcd63-8287-4fa8-804e-799d0a502704" />
+    <Project Path="Repeat/Repeat.csproj" Id="c87069c3-a7d8-4aa0-82c4-b1af2824896e" />
+    <Project Path="_10_Shared/_10_Shared.csproj" Id="d5bb8a97-9123-416f-aaa2-6029fcb7472b" />
+  </Folder>
   <Folder Name="/ImportantConcepts/">
     <Project Path="DefferedExecution_Vs_ImmediateExecution/DeferredExecution_Vs_ImmediateExecution.csproj" Id="23b6d7b1-3100-4661-aa5f-d72c3acfb7b0" />
   </Folder>
