@@ -41,4 +41,8 @@
     <Project Path="Quantifiers/Quantifiers.csproj" Id="6e68db28-d8c9-41b7-9f0b-7fc755f48037" />
     <Project Path="_07_Shared/_07_Shared.csproj" Id="dd7bcd6b-1c25-470b-989f-5965679b1c5d" />
   </Folder>
+  <Folder Name="/08_Grouping/">
+    <Project Path="Grouping/Grouping.csproj" Id="793f961e-39b9-4d5a-a50b-845d8431cfa1" />
+    <Project Path="_08_Shared/_08_Shared.csproj" Id="9c05ad65-a223-45c7-8fe6-7e81e0ab0147" />
+  </Folder>
 </Solution>
