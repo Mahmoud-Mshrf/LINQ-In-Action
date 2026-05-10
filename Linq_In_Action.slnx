@@ -30,4 +30,11 @@
     <Project Path="Reverse/Reverse.csproj" Id="b23ad8a3-2f38-4a04-a48c-122280e4fff8" />
     <Project Path="Then-By/Then-By.csproj" Id="ebdadb75-aea7-4638-ad3e-6483a3bab16b" />
   </Folder>
+  <Folder Name="/DataPartitioning/">
+    <Project Path="06_Shared/06_Shared.csproj" Id="db37efa7-3882-4635-9d98-a4afd9897a23" />
+    <Project Path="Chunk/Chunk.csproj" Id="0c6b6935-048a-4b24-975b-a4a7a88baee3" />
+    <Project Path="Pagination/Pagination.csproj" Id="fb2b6f33-d6b1-44ba-937e-0e80c864ed0f" />
+    <Project Path="Skip/Skip.csproj" Id="141118b1-9e92-4882-a752-6e3d159c3159" />
+    <Project Path="Take/Take.csproj" Id="0a2c2df3-7173-4e5c-b9d0-bd3a6e0c8581" />
+  </Folder>
 </Solution>
