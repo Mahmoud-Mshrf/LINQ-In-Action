@@ -55,6 +55,9 @@
     <Project Path="Repeat/Repeat.csproj" Id="c87069c3-a7d8-4aa0-82c4-b1af2824896e" />
     <Project Path="_10_Shared/_10_Shared.csproj" Id="d5bb8a97-9123-416f-aaa2-6029fcb7472b" />
   </Folder>
+  <Folder Name="/11_ElementOperations/">
+    <Project Path="ElementOperations/ElementOperations.csproj" Id="cd19de21-a72c-4b40-b3de-ca7515133da8" />
+  </Folder>
   <Folder Name="/ImportantConcepts/">
     <Project Path="DefferedExecution_Vs_ImmediateExecution/DeferredExecution_Vs_ImmediateExecution.csproj" Id="23b6d7b1-3100-4661-aa5f-d72c3acfb7b0" />
   </Folder>
