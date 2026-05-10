@@ -45,6 +45,10 @@
     <Project Path="Grouping/Grouping.csproj" Id="793f961e-39b9-4d5a-a50b-845d8431cfa1" />
     <Project Path="_08_Shared/_08_Shared.csproj" Id="9c05ad65-a223-45c7-8fe6-7e81e0ab0147" />
   </Folder>
+  <Folder Name="/09_JoinOperators/">
+    <Project Path="Join_Operators/Join_Operators.csproj" Id="a98a048f-284e-4c41-b448-d95d9de47835" />
+    <Project Path="_09_Shared/_09_Shared.csproj" Id="e81b1ed7-d866-40b3-ad2a-e544b8c7bb76" />
+  </Folder>
   <Folder Name="/ImportantConcepts/">
     <Project Path="DefferedExecution_Vs_ImmediateExecution/DeferredExecution_Vs_ImmediateExecution.csproj" Id="23b6d7b1-3100-4661-aa5f-d72c3acfb7b0" />
   </Folder>
