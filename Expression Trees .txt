@@ -1,0 +1,282 @@
+Expression Trees in C# are one of those concepts that feel confusing at first because they sit between:
+
+
+code
+
+
+and data describing code
+
+
+That second part is the key.
+
+Normal Lambda Expression
+You already know this:
+Func<int, int> square = x => x * x;
+This is compiled into:
+
+
+executable IL code
+
+
+a normal delegate
+
+
+Meaning:
+
+the code RUNS directly.
+
+You can invoke it:
+Console.WriteLine(square(5)); // 25
+
+Expression Tree
+Now look at this:
+Expression<Func<int, int>> square = x => x * x;
+This looks almost identical…
+BUT now C# does NOT store executable code directly.
+Instead it stores:
+
+a tree representation describing the code structure itself.
+
+Meaning:
+
+
+operators
+
+
+variables
+
+
+method calls
+
+
+constants
+
+
+property accesses
+
+
+are stored as objects.
+
+Deep Idea
+Normal lambda:
+Code that executes
+Expression tree:
+Data structure describing code
+
+Real Analogy
+Normal lambda:
+A cooked meal
+Expression tree:
+The recipe instructions
+You can:
+
+
+inspect recipe
+
+
+modify recipe
+
+
+translate recipe
+
+
+analyze recipe
+
+
+before cooking.
+
+Example
+Expression<Func<int, int>> expr = x => x + 5;
+This creates a tree internally something like:
+Lambda └── Add     ├── Parameter x     └── Constant 5
+C# literally builds objects representing this structure.
+
+Why does this exist?
+Because some frameworks need to:
+
+
+READ your code
+
+
+ANALYZE your code
+
+
+TRANSLATE your code
+
+
+instead of immediately executing it.
+
+Most famous example: Entity Framework
+Example:
+db.Users.Where(x => x.Age > 18)
+That lambda is NOT executed immediately.
+EF reads the expression tree:
+x => x.Age > 18
+and translates it into SQL:
+WHERE Age > 18
+This is the magic.
+Without expression trees:
+
+
+EF could only execute C# code in memory
+
+
+it couldn't convert it to SQL
+
+
+
+Important Difference
+Func
+Func<int, bool> func = x => x > 5;
+Means:
+
+executable delegate
+
+
+Expression<Func>
+Expression<Func<int, bool>> expr = x => x > 5;
+Means:
+
+tree describing the lambda
+
+
+You can inspect expression trees
+Example:
+using System.Linq.Expressions;Expression<Func<int, int>> expr = x => x * 2;Console.WriteLine(expr.Body);
+Output:
+(x * 2)
+
+More detailed inspection
+Console.WriteLine(expr.Body.NodeType);
+Output:
+Multiply
+
+Expression Tree Objects
+Expression trees are made of classes like:
+ExpressionBinaryExpressionConstantExpressionParameterExpressionMethodCallExpressionLambdaExpression
+Each node represents part of the code.
+
+Visual Example
+For:
+x => x + 10
+Tree becomes:
+LambdaExpression    |BinaryExpression (Add)   / \  x  10
+
+Important Limitation
+Expression trees only support:
+
+
+expression-bodied lambdas
+
+
+This works:
+x => x + 1
+This usually does NOT:
+x =>{    Console.WriteLine(x);    return x + 1;}
+because that's a statement block, not a pure expression.
+
+Another Important Concept
+You can COMPILE expression trees into executable code.
+Example:
+Expression<Func<int, int>> expr = x => x + 1;Func<int, int> func = expr.Compile();Console.WriteLine(func(5));
+Output:
+6
+Meaning:
+
+
+expression tree → executable delegate
+
+
+
+So why not always use Expression Trees?
+Because they are:
+
+
+heavier
+
+
+slower
+
+
+more complex
+
+
+They're mainly for:
+
+
+LINQ providers
+
+
+ORMs
+
+
+dynamic query builders
+
+
+rule engines
+
+
+compilers
+
+
+analyzers
+
+
+
+The most important mental model
+Delegate
+"Do this"
+Expression Tree
+"This is WHAT should be done"
+One executes.
+One describes execution.
+
+Super Important Practical Understanding
+When you write:
+.Where(x => x.Age > 18)
+there are two possibilities:
+
+LINQ To Objects
+List<User>
+uses:
+Func<User, bool>
+because filtering happens in memory.
+
+Entity Framework
+DbSet<User>
+uses:
+Expression<Func<User, bool>>
+because EF must translate it into SQL.
+
+Final Deep Summary
+Expression Trees are:
+
+
+object representations of code
+
+
+stored as tree structures
+
+
+analyzable and transformable
+
+
+mainly used when code must be interpreted instead of immediately executed
+
+
+They allow C# code to become:
+
+
+data
+
+
+metadata
+
+
+query descriptions
+
+
+dynamic logic
+
+
+instead of just executable instructions.
