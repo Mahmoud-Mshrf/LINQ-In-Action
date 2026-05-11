@@ -58,7 +58,12 @@
   <Folder Name="/11_ElementOperations/">
     <Project Path="ElementOperations/ElementOperations.csproj" Id="cd19de21-a72c-4b40-b3de-ca7515133da8" />
   </Folder>
+  <Folder Name="/12_EqualityOperations/">
+    <Project Path="EqualityOperations/EqualityOperations.csproj" Id="b3d8d79a-454b-4801-8a0a-3dac55432881" />
+    <Project Path="_12And13_Shared/_12And13_Shared.csproj" Id="97265ebd-9494-4b9b-9f5d-945eb3c0792c" />
+  </Folder>
   <Folder Name="/ImportantConcepts/">
     <Project Path="DefferedExecution_Vs_ImmediateExecution/DeferredExecution_Vs_ImmediateExecution.csproj" Id="23b6d7b1-3100-4661-aa5f-d72c3acfb7b0" />
+    <Project Path="EqualityOverride/EqualityOverride.csproj" Id="76bc613b-d124-4291-8a45-ba7b7840668e" />
   </Folder>
 </Solution>
