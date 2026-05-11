@@ -70,6 +70,10 @@
     <Project Path="Standard/Standard.csproj" Id="c70b9e4e-9dce-4ae7-8f17-e3ac374b0784" />
     <Project Path="_14_Shared/_14_Shared.csproj" Id="5a3c4717-d967-4d68-8c15-32f58e78c4d5" />
   </Folder>
+  <Folder Name="/15_SetsOperations/">
+    <Project Path="SetsOperations/SetsOperations.csproj" Id="aae9d03f-dcd1-42b0-804b-c5feac29515f" />
+    <Project Path="_15_Shared/_15_Shared.csproj" Id="bd264d56-4fd9-4fac-92ac-d196d06941d8" />
+  </Folder>
   <Folder Name="/ImportantConcepts/">
     <Project Path="DefferedExecution_Vs_ImmediateExecution/DeferredExecution_Vs_ImmediateExecution.csproj" Id="23b6d7b1-3100-4661-aa5f-d72c3acfb7b0" />
     <Project Path="EqualityOverride/EqualityOverride.csproj" Id="76bc613b-d124-4291-8a45-ba7b7840668e" />
