@@ -74,8 +74,14 @@
     <Project Path="SetsOperations/SetsOperations.csproj" Id="aae9d03f-dcd1-42b0-804b-c5feac29515f" />
     <Project Path="_15_Shared/_15_Shared.csproj" Id="bd264d56-4fd9-4fac-92ac-d196d06941d8" />
   </Folder>
+  <Folder Name="/16_ExpressionTree/" />
   <Folder Name="/ImportantConcepts/">
     <Project Path="DefferedExecution_Vs_ImmediateExecution/DeferredExecution_Vs_ImmediateExecution.csproj" Id="23b6d7b1-3100-4661-aa5f-d72c3acfb7b0" />
     <Project Path="EqualityOverride/EqualityOverride.csproj" Id="76bc613b-d124-4291-8a45-ba7b7840668e" />
+  </Folder>
+  <Folder Name="/TestOnFirst15Lesson/">
+    <File Path="TestQuestions.txt" />
+    <Project Path="Test/Test.csproj" Id="ab0ed492-1f5f-42ef-bfaa-3ab29008a64b" />
+    <Project Path="Test_Shared/Test_Shared.csproj" Id="8d795f4c-dcf0-4e89-a81f-2baec51d5ac3" />
   </Folder>
 </Solution>

@@ -1,0 +1,181 @@
+🎯 Level 1 — Projection & Sorting
+Q1
+
+Using Select:
+Return only student names.
+
+Q2
+
+Using SelectMany:
+Return all grades from all students in one sequence.
+
+Q3
+
+Using Zip:
+Combine:
+
+["A","B","C"]
+
+with:
+
+[1,2,3]
+
+👉 Expected:
+
+A-1
+B-2
+C-3
+Q4
+
+Sort students:
+
+by Department ascending
+then by Age descending
+Q5
+
+What is the difference between:
+
+OrderBy()
+
+and
+
+ThenBy()
+🎯 Level 2 — Partitioning & Quantifiers
+Q6
+
+Get first 2 students using LINQ.
+
+Q7
+
+Skip first 3 students.
+
+Q8
+
+Using TakeWhile:
+Take students while Age < 23.
+
+⚠️ Explain behavior carefully.
+
+Q9
+
+Implement pagination:
+
+page size = 2
+page number = 2
+Q10
+
+Using Chunk:
+Split students into groups of 2.
+
+Q11
+
+Check if:
+
+ANY student age > 23
+ALL students belong to CS department
+Q12
+
+Check if student names contain "Ali".
+
+Using:
+
+Contains()
+🎯 Level 3 — Grouping & Joins
+Q13
+
+Group students by Department.
+
+Q14
+
+Difference between:
+
+GroupBy()
+
+and
+
+ToLookup()
+Q15
+
+Using Join:
+Return:
+
+StudentName - CourseTitle
+Q16 (Important 🔥)
+
+Using GroupJoin:
+Return each student with all his courses.
+
+🎯 Level 4 — Generation & Element Operators
+Q17
+
+Generate numbers from 1 → 10 using LINQ.
+
+Q18
+
+Repeat "Hello" 5 times.
+
+Q19
+
+Difference between:
+
+First()
+FirstOrDefault()
+Single()
+SingleOrDefault()
+Q20 (Tricky)
+
+What happens if:
+
+Single()
+
+finds:
+
+zero elements
+multiple elements
+🎯 Level 5 — Aggregation & Sets
+Q21
+
+Get:
+
+Max age
+Student with max age (MaxBy)
+Q22
+
+Calculate average age.
+
+Q23
+
+Use Aggregate() to calculate total grades count.
+
+Q24
+
+Difference between:
+
+Union()
+Concat()
+Q25
+
+Difference between:
+
+Distinct()
+Except()
+Intersect()
+🎯 Level 6 — Conceptual
+Q26
+
+What is:
+
+deferred execution
+immediate execution
+
+in LINQ?
+
+Q27
+
+What is the difference between:
+
+IEnumerable
+
+and
+
+IQueryable
