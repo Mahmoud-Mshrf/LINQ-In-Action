@@ -8,11 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.7" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\03_Shared\03_Shared.csproj" />
+    <ProjectReference Include="..\IEnumerable_VS_IQueryable\IEnumerable_VS_IQueryable_DataSource.csproj" />
   </ItemGroup>
 
 </Project>

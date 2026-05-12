@@ -78,6 +78,11 @@
     <File Path="Expression Trees .txt" />
     <Project Path="ExpressionTrees/ExpressionTrees.csproj" Id="78767b7e-d7c3-49fd-86dd-6aa297974396" />
   </Folder>
+  <Folder Name="/17_IEnumerable_VS_IQueryable/">
+    <Project Path="IEnumerable/IEnumerable.csproj" Id="9ef0c48f-3910-47d0-a5e3-53bc18fb6dd2" />
+    <Project Path="IEnumerable_VS_IQueryable/IEnumerable_VS_IQueryable_DataSource.csproj" Id="0b48a147-f417-4ada-9bd7-f20065a4181e" />
+    <Project Path="IQueryable/IQueryable.csproj" Id="c07b75fe-17cc-41f6-bbdf-f128edc9930d" />
+  </Folder>
   <Folder Name="/ImportantConcepts/">
     <Project Path="DefferedExecution_Vs_ImmediateExecution/DeferredExecution_Vs_ImmediateExecution.csproj" Id="23b6d7b1-3100-4661-aa5f-d72c3acfb7b0" />
     <Project Path="EqualityOverride/EqualityOverride.csproj" Id="76bc613b-d124-4291-8a45-ba7b7840668e" />
