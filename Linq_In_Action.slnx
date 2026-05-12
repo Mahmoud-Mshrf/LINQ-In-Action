@@ -88,6 +88,10 @@
     <Project Path="CastVsOfType/CastVsOfType.csproj" Id="0df2e2d3-1c27-46bf-9523-ecf8f98b8da5" />
     <Project Path="Materialize Data/Materialize_Data.csproj" Id="a8404920-8109-4722-ac0d-59c3d349a113" />
   </Folder>
+  <Folder Name="/19_CustomLinqMethods/">
+    <Project Path="CustomLinqMethods/CustomLinqMethods.csproj" Id="cec19475-523a-41ed-b499-73eb8d57c29b" />
+    <Project Path="_19_Shared/_19_Shared.csproj" Id="c6cfe1ca-a95d-4706-944e-37ebfa11a364" />
+  </Folder>
   <Folder Name="/ImportantConcepts/">
     <Project Path="DefferedExecution_Vs_ImmediateExecution/DeferredExecution_Vs_ImmediateExecution.csproj" Id="23b6d7b1-3100-4661-aa5f-d72c3acfb7b0" />
     <Project Path="EqualityOverride/EqualityOverride.csproj" Id="76bc613b-d124-4291-8a45-ba7b7840668e" />
