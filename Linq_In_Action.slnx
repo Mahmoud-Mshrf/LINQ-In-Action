@@ -83,6 +83,11 @@
     <Project Path="IEnumerable_VS_IQueryable/IEnumerable_VS_IQueryable_DataSource.csproj" Id="0b48a147-f417-4ada-9bd7-f20065a4181e" />
     <Project Path="IQueryable/IQueryable.csproj" Id="c07b75fe-17cc-41f6-bbdf-f128edc9930d" />
   </Folder>
+  <Folder Name="/18_CastinInLINQ/">
+    <Project Path="AsEnumerableAndAsQueryable/AsEnumerableAndAsQueryable.csproj" Id="97e1d7a0-fdcf-4ae0-8b05-0e5757e11e01" />
+    <Project Path="CastVsOfType/CastVsOfType.csproj" Id="0df2e2d3-1c27-46bf-9523-ecf8f98b8da5" />
+    <Project Path="Materialize Data/Materialize_Data.csproj" Id="a8404920-8109-4722-ac0d-59c3d349a113" />
+  </Folder>
   <Folder Name="/ImportantConcepts/">
     <Project Path="DefferedExecution_Vs_ImmediateExecution/DeferredExecution_Vs_ImmediateExecution.csproj" Id="23b6d7b1-3100-4661-aa5f-d72c3acfb7b0" />
     <Project Path="EqualityOverride/EqualityOverride.csproj" Id="76bc613b-d124-4291-8a45-ba7b7840668e" />
